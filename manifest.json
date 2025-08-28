@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Block Google GSI",
+    "version": "1.0",
+    "permissions": ["declarativeNetRequest"],
+    "host_permissions": ["*://accounts.google.com/*"],
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
+    }
+}
