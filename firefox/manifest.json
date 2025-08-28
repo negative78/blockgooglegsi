@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Google Sign-In Popup Blocker",
+    "version": "0.1",
+    "description": "Blocks the Google Sign-In popups from appearing on websites",
+    "permissions": ["webNavigation", "storage", "activeTab", "<all_urls>"],
+    "background": { "scripts": ["background.js"] },
+    "browser_action": { "default_popup": "popup.html" },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "{d3e839cd-0896-4da6-8b4f-894982c65f3e}",
+            "strict_min_version": "57.0"
+        }
+    }
+}
